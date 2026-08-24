@@ -1,4 +1,6 @@
 # Andrew Huff - 5303 Advanced Database
 
+For all things Database!
+
 ## Link
 https://github.com/AndrewHuff6/5303_Adv_Database.git
