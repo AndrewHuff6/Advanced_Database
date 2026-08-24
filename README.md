@@ -1,7 +1,7 @@
 # Andrew Huff - 5303 Advanced Database
 For all things database!
 
-#### Andrew Huff
+## Details
 #### Personal email - drewhuff2502@gmail.com
 #### MSU email - adhuff0205@my.msutexas.edu
 #### Website - https://github.com/AndrewHuff6/5303_Adv_Database.git
