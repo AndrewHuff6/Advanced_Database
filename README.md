@@ -4,7 +4,8 @@ For all things database!
 ## Details
 #### Personal email - drewhuff2502@gmail.com
 #### MSU email - adhuff0205@my.msutexas.edu
-#### Website - https://github.com/AndrewHuff6/5303_Adv_Database.git
+#### Website - https://github.com/AndrewHuff6/Advanced_Database.git
+#### Dr. Griffin's Website - https://github.com/rugbyprof/5303-Adv-Database
 #### Image:
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/281ad9e5-9ef3-4f8d-9c7e-8dc9e24033b0" />
 
