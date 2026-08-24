@@ -4,7 +4,7 @@ For all things database!
 #### Andrew Huff
 #### Personal email - drewhuff2502@gmail.com
 #### MSU email - adhuff0205@my.msutexas.edu
-#### Website - https://github.com/AndrewHuff6/
+#### Website - https://github.com/AndrewHuff6/5303_Adv_Database.git
 #### Image:
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/281ad9e5-9ef3-4f8d-9c7e-8dc9e24033b0" />
 
