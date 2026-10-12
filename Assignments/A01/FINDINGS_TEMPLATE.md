@@ -67,13 +67,13 @@ Paste your whole `results.md` here. All times are median milliseconds.
 
 | Query | `noidx_1m` ms | `idx_1m` ms | Speedup (noidx ÷ idx) |
 | :---- | ------------: | ----------: | --------------------: |
-| Q04   |               |             |                       |
-| Q05   |               |             |                       |
-| Q06   |               |             |                       |
-| Q07   |               |             |                       |
-| Q08   |               |             |                       |
-| Q09   |               |             |                       |
-| Q10   |               |             |                       |
+| Q04   |      82.70         |      42.31       |         1.95              |
+| Q05   |      81.77         |       2.33      |            35.09           |
+| Q06   |      84.06         |      42.91       |          1.96             |
+| Q07   |      191.63         |      89.31       |          2.15             |
+| Q08   |      4623.31         |      41.19       |            112.24           |
+| Q09   |      2302.50         |      268.52       |          8.57             |
+| Q10   |      840.99         |      117.97       |          7.13             |
 
 1. Which query had the largest speedup? Quote its two plan summaries and explain the difference.
 
