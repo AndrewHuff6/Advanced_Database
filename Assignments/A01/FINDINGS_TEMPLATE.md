@@ -28,10 +28,26 @@ idx_customers_zipcode     idx_purchases_customer        idx_purchases_date_cust_
 
 Paste your whole `results.md` here. All times are median milliseconds.
 
-| Query | noidx_10k | idx_10k | noidx_100k | idx_100k | noidx_1m | idx_1m |
-| :---- | --------: | ------: | ---------: | -------: | -------: | -----: |
-| Q01   |           |         |            |          |          |        |
-
+| Query | noidx_10k | idx_10k |
+| :--- | ---: | ---: |
+| Q01 | 0.06 | 0.06 |
+| Q02 | 0.10 | 0.10 |
+| Q03 | 1.59 | 0.45 |
+| Q04 | 1.19 | 1.65 |
+| Q05 | 1.35 | 0.08 |
+| Q06 | 2.13 | 2.10 |
+| Q07 | 3.32 | 1.42 |
+| Q08 | 20.84 | 4.71 |
+| Q09 | 12.34 | 2.64 |
+| Q10 | 6.36 | 1.29 |
+| Q11 | 0.49 | 0.40 |
+| Q11-fast | 0.12 | 0.14 |
+| Q12 | 2.02 | 1.85 |
+| Q12-fast | 0.10 | 0.10 |
+| Q13 | 7.63 | 5.83 |
+| Q13-fast | 3.22 | 2.11 |
+| Q14 | 12.57 | 9.07 |
+| Q14-fast | 0.72 | 0.75 |
 ---
 
 ## Phase 1 — Simple reads (Q01–Q03)
