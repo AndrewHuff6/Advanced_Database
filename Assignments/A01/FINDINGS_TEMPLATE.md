@@ -55,7 +55,7 @@ Paste your whole `results.md` here. All times are median milliseconds.
 | Query | Plan summary in `noidx_1m` | Plan summary in `idx_1m` |
 | :---- | :------------------------- | :----------------------- |
 | Q01   |"SEARCH c USING INTEGER PRIMARY KEY (rowid=?)", "SEARCH z USING INDEX sqlite_autoindex_zipcodes_1 (zipcode=?)" | "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)","SEARCH z USING INDEX sqlite_autoindex_zipcodes_1(zipcode=?)"|
-| Q03   |                            |                          |
+| Q03   |"SCAN purchases", "USE TEMP B-TREE FOR ORDER BY"|"SEARCH purchases USING INDEX idx_purchases_date (purchase_date>? AND purchase_date<?)"|
 
 *A plan summary is the one or two `SCAN` / `SEARCH` lines that matter, e.g. `SCAN purchases + TEMP B-TREE FOR ORDER BY`.*
 
