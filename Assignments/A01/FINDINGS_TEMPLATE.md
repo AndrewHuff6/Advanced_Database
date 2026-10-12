@@ -85,10 +85,10 @@ Paste your whole `results.md` here. All times are median milliseconds.
 
 | Query                          | slow, `noidx_1m` | slow, `idx_1m` | `/fast`, `idx_1m` |
 | :----------------------------- | ---------------: | -------------: | ----------------: |
-| Q11 offset → keyset            |                  |                |                   |
-| Q12 random sort → random ids   |                  |                |                   |
-| Q13 revenue by month → summary |                  |                |                   |
-| Q14 cube → summary             |                  |                |                   |
+| Q11 offset → keyset            |       31.54           |        30.88        |         0.09          |
+| Q12 random sort → random ids   |       120.02           |       117.27         |        0.13           |
+| Q13 revenue by month → summary |       682.51         |       534.70         |        8.74           |
+| Q14 cube → summary             |        1318.65          |       2307.55         |        7.14           |
 
 For each, write one or two sentences: **why the slow version is slow** (point at the plan) and **what the rewrite gives up**.
 
