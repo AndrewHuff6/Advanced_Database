@@ -101,23 +101,26 @@ For each, write one or two sentences: **why the slow version is slow** (point at
 
 | Run  | busy_timeout | workers |    n | succeeded (201) | failed (503) | seconds | writes/sec |
 | :--- | -----------: | ------: | ---: | --------------: | -----------: | ------: | ---------: |
-| A    |            0 |       1 |  200 |                 |              |         |            |
-| A    |            0 |       1 |  500 |                 |              |         |            |
-| B    |         5000 |       1 |  200 |                 |              |         |            |
-| B    |         5000 |       1 |  500 |                 |              |         |            |
-| C    |            0 |       4 |  200 |                 |              |         |            |
-| C    |            0 |       4 |  500 |                 |              |         |            |
-| D    |         5000 |       4 |  200 |                 |              |         |            |
-| D    |         5000 |       4 |  500 |                 |              |         |            |
+| A    |            0 |       1 |  200 |        200         |      0        |    2.05     |     97.56       |
+| A    |            0 |       1 |  500 |        93         |       407       |    8.52     |     58.69       |
+| B    |         5000 |       1 |  200 |        62         |       138       |    1.45     |     137.93       |
+| B    |         5000 |       1 |  500 |        142         |      358        |    8.40     |     59.52       |
+| C    |            0 |       4 |  200 |        49         |      151        |    1.54     |      129.87      |
+| C    |            0 |       4 |  500 |        195         |       305       |    8.36     |     59.80       |
+| D    |         5000 |       4 |  200 |        200         |       0       |    1.60     |      125      |
+| D    |         5000 |       4 |  500 |        500         |       0       |     9.06    |      55.19      |
 
 Exact error text from a failed request:
 
 ```
+INFO:     127.0.0.1:56978 - "POST /purchases?db=writes HTTP/1.1" 503 Service Unavailable
 ```
 
 Summary-table check (`COUNT(*) FROM purchases` vs. `SUM(num_purchases) FROM monthly_sales`):
 
 ```
+COUNT(*) = 102990
+SUM(num_purchases) = 100000
 ```
 
 1. What does `busy_timeout` do, and why did B succeed where A failed?
