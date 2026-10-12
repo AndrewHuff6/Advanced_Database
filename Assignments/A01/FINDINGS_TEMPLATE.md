@@ -20,6 +20,8 @@
 - Indexes in `idx_1m.db` (paste the output of `sqlite3 data/idx_1m.db ".indexes"`):
 
 ```
+idx_cards_customer        idx_purchases_cust_amount     idx_purchases_date                 idx_purchases_department      idx_purchases_product
+idx_customers_zipcode     idx_purchases_customer        idx_purchases_date_cust_amount     idx_purchases_prod_amount     idx_zipcodes_state
 ```
 
 ## Results
