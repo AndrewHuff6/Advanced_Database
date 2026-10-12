@@ -13,9 +13,9 @@
 
 | Size | purchases | customers | products |
 | :--- | --------: | --------: | -------: |
-| 10k  |           |           |          |
-| 100k |           |           |          |
-| 1m   |           |           |          |
+| 10k  |      10,000     |     500      |     100     |
+| 100k |     100,000      |     5,000      |     500     |
+| 1m   |      1,000,000     |     50,000      |     5,000     |
 
 - Indexes in `idx_1m.db` (paste the output of `sqlite3 data/idx_1m.db ".indexes"`):
 
